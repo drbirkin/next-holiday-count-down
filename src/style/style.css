@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Poppins:wght@200&display=swap');
+
+body {
+    margin: 0;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgb(15, 16, 17);
+}
+
+.cover {
+    position: absolute;
+    background-color: black;
+    filter: blur(80px);
+    opacity: 80%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+
+.timer .cover-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.countdown {
+    font-family: 'Aldrich', sans-serif;;
+    font-size: 5rem;
+    color: white;
+    height: auto;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    /* filter: blur(3px); */
+}
+
+.counters {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.counters .digit {
+    display: flex;
+    height: 20rem;
+}
+
+.counters p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    text-align: center;
+    margin: 0;
+}
+
+.hidden {
+    height: 0%;
+}
+
+.counters .digit div {
+    display: flex;
+    flex-direction: column;
+    /* Enable for countup */
+    /* justify-content: flex-end;*/
+    justify-content: flex-start;
+    /* transition: all 1s ease-in-out; */
+}
+
+.counters > p {
+    font-size: 2rem;
+    margin: 0 1rem;
+    margin-right: 3rem;
+    width: auto;
+}
+
+.counters > p:last-child {
+    font-size: 2rem;
+    margin: 0 1rem;
+    margin-right: 0;
+    width: auto;
+}
+
+.counters .digit div p {
+    transition: all .75s linear;
+    height: 30%;
+}
+
+.counters .digit div p:first-child {
+    background: linear-gradient(rgba(240, 248, 255, 0),rgba(240, 248, 255, 0.054),rgba(240, 248, 255, 0.226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .65;
+}
+
+.counters .digit div p:last-child {
+    background: linear-gradient(rgba(240, 248, 255, 0.226),rgba(240, 248, 255, 0.054),rgba(240, 248, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .65;
+    color: transparent;
+}
+
+/* .last {
+    color: rgb(82, 174, 255);
+    opacity: 1;
+} */
+
+.first {
+    color: rgba(240, 248, 255, 0.075);
+    opacity: .65;
+    /* font-size:  4.8rem; */
+}
+
+.event {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: white;
+}
