@@ -2,7 +2,6 @@
   "name": "holidays-countdown",
   "version": "1.0.0",
   "description": "timer for next festival",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
